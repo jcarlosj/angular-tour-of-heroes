@@ -14,4 +14,10 @@ export class HeroesComponent {
     name: 'Windstorm'
   }
   heroes = HEROES;
+  selectedHero!: Hero;
+
+  /** Agregamos controlador de eventos de click */
+  onSelect( hero: Hero ): void {
+    this.selectedHero = hero;
+  }
 }
